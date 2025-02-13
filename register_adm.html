@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrazione</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <form method="post" action="/auth/register_adm.php">
+            <h1>Registrazione</h1>
+            <input type="text" id="username" placeholder="Username" name="username" maxlength="50" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <label for="lang">Livello utente</label>
+            <select name="livello" id="lang">
+              <option value=0>Ospite</option>
+              <option value=1>Utente base</option>
+              <option value=7>superuser</option>s
+              <option value=8>admin</option>
+              <option value=9>root</option>
+            </select>
+            <button type="submit" name="register">Registrati</button>
+        </form>
+    </body>
+</html>
